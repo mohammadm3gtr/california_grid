@@ -89,5 +89,5 @@ mx = max(b)
 lag = ceil((max(b) / 100)) * 10
 ax.set_yticks([lag * i for i in range(11)])
 ax.set_title('Maximum Power Needed for {} Scenario in {} Condition'.format(sit, ex))
-ax.legend(title='Market Share: \nLevel 2: %.0f%%       DC Fast: %.0f%% \n Charger Nominal Power \nLevel 2: %.0f KW    DC Fast: %.0f KW' % (level_two_percent * 100, dc_fast_percent * 100, level_two_power, dc_power), loc='upper left')
+ax.legend(title='Market Share:\nLevel 2: %.0f%%       DC Fast: %.0f%% \nCharger Nominal Power: \nLevel 2: %.0f KW    DC Fast: %.0f KW' % (level_two_percent * 100, dc_fast_percent * 100, level_two_power, dc_power), loc='upper left')
 st.pyplot(fig)
