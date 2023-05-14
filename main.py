@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 from math import ceil
-st.write('<div style="text-align: center;"><span style="font-size: 24px;">Analysis of Electric Power Requirements and Scenario Planning for Light-Duty Vehicles </span></div>', unsafe_allow_html=True)
+st.write('<div style="text-align: center;"><span style="font-size: 24px;">Analysis of Electric Power Required for Light-Duty Vehicles in California</span></div>', unsafe_allow_html=True)
 st.write('<div style="text-align: center;"><span style="font-size: 24px;">\n</span></div>', unsafe_allow_html=True)
 
 st.write('<p style="font-family: cursive; font-size: 16px; text-align: center;">Developed by <a href="https://www.linkedin.com/in/oshanreh/" style="color: #ff69b4; text-decoration: none;">Mohammad Mehdi Oshanreh</a></p>', unsafe_allow_html=True)
