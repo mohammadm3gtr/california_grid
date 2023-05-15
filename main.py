@@ -20,8 +20,8 @@ if sit =='Unmanaged':
 st.write('<span style="font-size: 24px;">Choose Number of Cars to be Charged Daily</span>', unsafe_allow_html=True)
 st.write('<span style="font-size: 16px;">Lower value assumes that not all cars are used and charged daily. \n Upper value assumes an extreme condition where all cars are being used and charged daily.</span>', unsafe_allow_html=True)
 
-total_cars_option = st.selectbox("", ["23.2 Millon","30.8 Million"])
-total_cars=23200000
+total_cars_option = st.selectbox("", ["22.8 Millon","30.8 Million"])
+total_cars=22800000
 ex= 'Normal'
 
 if total_cars_option == "30.8 Million":
@@ -32,7 +32,9 @@ if total_cars_option == "30.8 Million":
 #avg_battery_size = st.number_input('Average Battery Size (KWh)', value=9)
 st.write('<span style="font-size: 24px;">Select Average Charger Power</span>', unsafe_allow_html=True)
 st.write('<span style="font-size: 16px;">The electric power required to meet BEV charging demand is directly proportional to the power rating of the charger. </span>', unsafe_allow_html=True)
-st.write('<span style="font-size: 16px;"We assumed only these two types are used to charge BEVs.</span>', unsafe_allow_html=True)
+st.write('<span style="font-size: 16px;">We assumed only these two types are used to charge BEVs.</span>', unsafe_allow_html=True)
+
+
 
 level_two_power =st.slider('Level Two Power (KW)', 3, 20, step=1, value=10)
 dc_power = st.slider('DC Fast Power (KW)', 50, 400, step=50, value=150)
